@@ -26,10 +26,14 @@ body {
   }
   
   .menu-logo {
-  font-family: "Arial Black", sans-serif;
-  font-size: 36px;
-  color: #fff;
-  text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Arial Black", sans-serif;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
   }
   
   .menu-items {
