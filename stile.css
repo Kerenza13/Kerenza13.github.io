@@ -60,7 +60,7 @@ body {
 }
 
 .menu-items a:hover {
-  color: #f00;
+  color: rgba(255, 0, 0, 0.932);
 }
 
 .page-content {
