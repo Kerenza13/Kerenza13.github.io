@@ -17,12 +17,12 @@ body {
   left: 0;
   right: 0;
   height: 80px;
-  background-color: #fFf;
+  background-color: #ffffff;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(41, 0, 221, 0.2);
 }
 
 .menu-container {
@@ -55,7 +55,7 @@ body {
 }
 
 .menu-items a {
-  color: #333;
+  color: #aa1717;
   text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
@@ -66,6 +66,9 @@ body {
 
 .menu-items a:hover {
   color: rgba(255, 0, 0, 0.932);
+}
+.portfolio-container h3 {
+  color: #0a0909;
 }
 
 .page-content h1 {
