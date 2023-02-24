@@ -1,13 +1,14 @@
 body {
-    
-    background-repeat: no-repeat;
-    color: #ffffff;
-    
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #f1f1f1;
+  background-image: url('C:\Users\Kerenza\Documents\GitHub\Kerenza13.github.io\fantasy.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f1f1f1;
 }
 
 .menu-overlay {
