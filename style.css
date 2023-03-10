@@ -67,7 +67,8 @@ body {
 .portfolio-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-container h2 {
@@ -131,9 +132,18 @@ body {
   margin-bottom: 40px;
 }
 
+
 .page-content p {
   font-size: 24px;
   color: #000000;
   text-align: center;
-  max
+  
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  
+
 }
