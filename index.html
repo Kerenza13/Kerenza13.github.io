@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
   <div class="menu-overlay">
     <div class="menu-logo">Carlos Morillas Delgado</div>
     <ul class="menu-items">
@@ -16,7 +17,7 @@
       <li><a href="#contact">CONTACT</a></li>
     </ul>
   </div>
-
+</header>
   <div class="page-content">
     <h1>Portfolio</h1>
     <p>Buenas, soy Carlos Morillas Delgado, actualmente estudiante de desarrollo de aplicaciones web y este es mi portfolio
@@ -24,13 +25,18 @@
   </div>
   
   <div class="about-container" id="about">
-    <h2>About</h2>
-   <h3><p>wrdrwvderbfegbrfdc</p></h3>
+    <h2>About me</h2>
+   <h3><p>Mi nombre es Carlos, tengo 20 años y soy de granada, me gustan los videojuegos, leer y el deporte.
+    Actualmente formo parte de la cominudad de speedruners del Portal 1 y el ULTRAKILL, hace unos años, tambien del super mario dros ds y mario kart ds.
+    Por suerte o por desgracia soy jugador del LOL, no a mucha honra cave decir.
+    Sinceramente no se que mas añadir por aqui asique lo dejo a la imaginacion del lector.
+   </p></h3>
   </div>
   
   <div class="portfolio-container" id="projects">
     <h2>My Projects</h2>
-    <h3>Project 1</h3>
+    <h3>Donde corre el doom?</h3>
+    <p>Si, soy de esos locos que se dedican a poner a funcionar el doom en cualquier sitio, subire una imagen cuando consiga ponerlo a funcionar en el microondas de mi casa</p>
     <img src="" alt="Project 1">
 
     <p></p>
@@ -39,11 +45,10 @@
     <img src="" alt="Project 2">
     <p></p>
   
-   <!-- <h3>Speedruns</h3> 
-    <p>Para aquellos que no lo sepan, un speedrun se basa en hacer algo en el menor tiempo posible optimizando toda accion o movimiento posible para lograrlo</p>
+    <h3>Speedruns</h3> 
+    <p>Para aquellos que no lo sepan, un speedrun se basa en hacer algo en el menor tiempo posible optimizando toda accion o movimiento posible para lograrlo, el video no es mi mejor tiempo actual.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/BjiBZ1IZOac" frameborder="0" allowfullscreen></iframe>
   </div> 
-  -->
   
   <div class="contact-container" id="contact">
     <h2>Contact Me</h2>
@@ -75,6 +80,39 @@
         behavior: 'smooth'
       });
     }
+    const menu = document.querySelector('.menu-overlay');
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', function() {
+  const currentScrollPos = window.pageYOffset;
+  
+  if (prevScrollPos > currentScrollPos) {
+    // Si el usuario está desplazándose hacia arriba
+    menu.classList.remove('hidden');
+  } else {
+    // Si el usuario está desplazándose hacia abajo
+    menu.classList.add('hidden');
+  }
+  
+  prevScrollPos = currentScrollPos;
+});
+
+menu.addEventListener('mouseenter', function() {
+  // Si el ratón entra en el menú, lo mostramos
+  menu.classList.remove('hidden');
+});
+
+menu.addEventListener('mouseleave', function() {
+  // Si el ratón sale del menú, lo ocultamos (sólo si el usuario se desplaza hacia abajo)
+  const currentScrollPos = window.pageYOffset;
+  
+  if (prevScrollPos < currentScrollPos) {
+    menu.classList.add('hidden');
+  }
+});
+
+
+
   </script>
   
 </body>
