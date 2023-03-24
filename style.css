@@ -155,9 +155,9 @@ body {
 
 
 .about-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
   align-items: center;
   font-size: 27px;
 }
@@ -166,4 +166,17 @@ body {
   font-size: 20px;
   font-weight: 470; 
   color: #000000; 
+}
+
+.about-container {
+  display: flex;
+  align-items:center;
+}
+
+.about-container img:first-child {
+  margin-right: 20px;
+}
+
+.about-container img:last-child {
+  margin-left: 20px;
 }
