@@ -73,6 +73,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center; 
 }
 
 .portfolio-container h2 {
@@ -83,12 +84,18 @@ body {
 .portfolio-container h3 {
   font-size: 24px;
   margin: 50px 0px 20px 0px;
+  text-align: center; 
+}
 
+.portfolio-container section {
+  max-width: 600px; 
 }
 
 .portfolio-container img {
   width: 100%;
   max-width: 600px;
+  margin: 0 auto; 
+  display: block; 
   margin-bottom: 20px;
 }
 
@@ -97,6 +104,7 @@ body {
   line-height: 1.5;
   margin-bottom: 50px;
 }
+
 
 .portfolio-item {
   width: calc(33.33% - 20px);
