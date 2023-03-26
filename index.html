@@ -9,18 +9,18 @@
         rel="stylesheet"
       />
     </head>
-    <header>
-      <div class="menu-overlay">
-        <div class="menu-logo">Carlos Morillas Delgado</div>
-        <ul class="menu-items">
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </div>
-    </header>
     <body>
+      <header>
+        <div class="menu-overlay">
+          <div class="menu-logo">Carlos Morillas Delgado</div>
+          <ul class="menu-items">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </header>
       <div class="page-content">
         <h1>Portfolio</h1>
         <p>
@@ -28,80 +28,90 @@
           desarrollo de aplicaciones web y este es mi portfolio
         </p>
       </div>
-      <h2 class="aboutMe">About me</h2>
-      <div class="about-container" id="about">
-       
-        <img
-          src="https://github.com/Kerenza13/Kerenza13.github.io/blob/0dc94d903e84587ff3977523ff0c3c6734281615/20221031_213547.jpg?raw=true"
-          alt="Left Image"
-          style="float: left; margin-right: 20px"
-        />
-        <p>
-          Mi nombre es Carlos, tengo 20 años y soy de Granada. Me gustan los
-          videojuegos, leer y el deporte. Actualmente formo parte de la
-          comunidad de speedrunners del Portal 1 y el ULTRAKILL. Hace unos años,
-          también formé parte de la comunidad de Super Mario Bros DS y Mario
-          Kart DS. Por suerte o por desgracia, soy jugador del LOL, no a mucha
-          honra cabe decir. Sinceramente, no sé qué más añadir por aquí, así que
-          lo dejo a la imaginación del lector.
-        </p>
-        <img
-          src="https://github.com/Kerenza13/Kerenza13.github.io/blob/d7ca37de72541d81e39d5919139dcbb5ea9e64ea/20230120_153643.jpg?raw=true"
-          alt="Right Image"
-          style="float: right; margin-left: 20px"
-        />
-      </div>
+      <section class="aboutMe">
+        <h2>About me</h2>
+        <div class="about-container" id="about">
+          <img
+            src="https://github.com/Kerenza13/Kerenza13.github.io/blob/0dc94d903e84587ff3977523ff0c3c6734281615/20221031_213547.jpg?raw=true"
+            alt="Left Image"
+            style="float: left; margin-right: 20px"
+          />
+          <p>
+            Mi nombre es Carlos, tengo 20 años y soy de Granada. Me gustan los
+            videojuegos, leer y el deporte. Actualmente formo parte de la
+            comunidad de speedrunners del Portal 1 y el ULTRAKILL. Hace unos
+            años, también formé parte de la comunidad de Super Mario Bros DS y
+            Mario Kart DS. Por suerte o por desgracia, soy jugador del LOL, no a
+            mucha honra cabe decir. Sinceramente, no sé qué más añadir por aquí,
+            así que lo dejo a la imaginación del lector.
+          </p>
+          <img
+            src="https://github.com/Kerenza13/Kerenza13.github.io/blob/d7ca37de72541d81e39d5919139dcbb5ea9e64ea/20230120_153643.jpg?raw=true"
+            alt="Right Image"
+            style="float: right; margin-left: 20px"
+          />
+        </div>
+      </section>
 
-      <div class="portfolio-container" id="projects">
+      <section class="portfolio-container" id="projects">
         <h2>My Projects</h2>
-        <h3>Donde corre el doom?</h3>
-        <p>
-          Si, soy de esos locos que se dedican a poner a funcionar el doom en
-          cualquier sitio, subire una imagen cuando consiga ponerlo a funcionar
-          en el microondas de mi casa
-        </p>
-        <img
-          src="https://cdn.mos.cms.futurecdn.net/7Ht8x3enxNeRKDJLwmxmV9.png"
-          alt="Project 1"
-        />
-
-        <h3>Project 2</h3>
-        <img
-          src="https://us-tuna-sounds-images.voicemod.net/f2d55c27-f82c-4f0a-bf4e-e0dd3f7c1991-1671835896517.png"
-          alt="Project 2"
-        />
-
-        <h3>Speedruns</h3>
-        <p>
-          Para aquellos que no lo sepan, un speedrun se basa en hacer algo en el
-          menor tiempo posible optimizando toda accion o movimiento posible para
-          lograrlo, el video no es mi mejor tiempo actual.
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/BjiBZ1IZOac"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <h2 class="ContactMe">Contact Me</h2>
-      <div class="contact-container" id="contact">
+        <section>
+          <h3>Donde corre el doom?</h3>
+          <p>
+            Si, soy de esos locos que se dedican a poner a funcionar el doom en
+            cualquier sitio, subire una imagen cuando consiga ponerlo a funcionar
+            en el microondas de mi casa
+          </p>
+          <img
+            src="https://cdn.mos.cms.futurecdn.net/7Ht8x3enxNeRKDJLwmxmV9.png"
+            alt="Project 1"
+          />
+        </section>
       
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+        <section>
+          <h3>Project 2</h3>
+          <img
+            src="https://us-tuna-sounds-images.voicemod.net/f2d55c27-f82c-4f0a-bf4e-e0dd3f7c1991-1671835896517.png"
+            alt="Project 2"
+          />
+        </section>
+      
+        <section>
+          <h3>Speedruns</h3>
+          <p>
+            Para aquellos que no lo sepan, un speedrun se basa en hacer algo en el
+            menor tiempo posible optimizando toda accion o movimiento posible para
+            lograrlo, el video no es mi mejor tiempo actual.
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BjiBZ1IZOac"
+            frameborder="0"
+            allowfullscreen
+         ></iframe>
+        </section>
+      </section>
+      
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Send" />
-        </form>
-      </div>
+      <section class="contact-container" id="contact">
+        <h2 class="ContactMe">Contact Me</h2>
+        <section>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+      
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+      
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+      
+            <input type="submit" value="Send" />
+          </form>
+        </section>
+      </section>
+      
       <script>
         const menuItems = document.querySelectorAll('.menu-items a[href^="#"]');
         menuItems.forEach((item) => {
