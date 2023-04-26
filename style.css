@@ -198,13 +198,14 @@ body {
   font-size: 29px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
 
   .menu-logo{
       flex-direction:column-reverse;
-      margin-top:26px;
-      margin-left: 10px;
-      font-size: 26px;
+      margin-top:6px;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 97%;
       
   }
   .contact-container{
