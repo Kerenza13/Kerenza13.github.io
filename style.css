@@ -197,6 +197,20 @@ body {
   text-align: center;
   font-size: 29px;
 }
-@media .menu-logo{
 
+@media (max-width: 950px) {
+
+  .menu-logo{
+      flex-direction:column-reverse;
+      margin-top:26px;
+      margin-left: 10px;
+      font-size: 26px;
+      
+  }
+  .contact-container{
+    flex-direction: row;
+    margin: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
 }
