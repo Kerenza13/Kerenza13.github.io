@@ -1,145 +1,128 @@
 <!DOCTYPE html>
-<html>
-  <html>
-    <head>
-      <title>Carlos Morillas Delgado</title>
-      <link rel="stylesheet" type="text/css" href="style.css" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        rel="stylesheet"
-      />
-    </head>
-    <body>
-      <header>
-        <div class="menu-overlay">
-          <div class="menu-logo">Carlos Morillas Delgado</div>
-          <ul class="menu-items">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Morillas Delgado | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">CMD</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Creative Developer</h1>
+            <p>Turning ideas into digital experiences through code and creativity</p>
         </div>
-      </header>
-      <div class="page-content">
-        <h1>Portfolio</h1>
-        <p>
-          Buenas, soy Carlos Morillas Delgado, actualmente estudiando 
-          desarrollo de aplicaciones web y este es mi portfolio
-        </p>
-      </div>
-      <section class="aboutMe">
-        <h2>About me</h2>
-        <div class="about-container" id="about">
-          <img
-            src="https://github.com/Kerenza13/Kerenza13.github.io/blob/0dc94d903e84587ff3977523ff0c3c6734281615/20221031_213547.jpg?raw=true"
-            alt="Left Image"
-            style="float: left; margin-right: 20px"
-          />
-          <p>
-            Mi nombre es Carlos, tengo 19 años y soy de Granada. Me gustan los
-            videojuegos, leer y el deporte. Actualmente formo parte de la
-            comunidad de speedrunners del Portal 1 y el ULTRAKILL. Hace unos
-            años, también de la del Super Mario Bros DS y
-            Mario Kart DS. Por suerte o por desgracia, soy jugador del LOL, no a
-            mucha honra cabe decir ( wtf chogath supp (euw)). Sinceramente no sé qué más añadir por aquí,
-            así que lo dejo a la imaginación del lector.
-          </p>
-          <img
-            src="https://github.com/Kerenza13/Kerenza13.github.io/blob/d7ca37de72541d81e39d5919139dcbb5ea9e64ea/20230120_153643.jpg?raw=true"
-            alt="Right Image"
-            style="float: right; margin-left: 20px"
-          />
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>👋 Hola! I'm Carlos, a 19-year-old developer from Granada passionate about pushing boundaries in both coding and gaming. When I'm not crafting digital experiences, you'll find me speedrunning Portal 1 or exploring new worlds in literature.</p>
+                <div class="gaming-tags">
+                    <span class="tag">🎮 Speedrunner</span>
+                    <span class="tag">👨💻 Full Stack Learner</span>
+                    <span class="tag">🚀 Tech Enthusiast</span>
+                </div>
+            </div>
+            <div class="about-images">
+                <img src="YOUR_IMAGE_URL_1" alt="Gaming Setup">
+                <img src="YOUR_IMAGE_URL_2" alt="Development Environment">
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="portfolio-container" id="projects">
-        <h2>My Projects</h2>
-        <section>
-          <h3>Donde corre el doom?</h3>
-          <p>
-            Si, soy de esos locos que se dedican a poner a funcionar el doom en
-            cualquier sitio, subire una imagen cuando consiga ponerlo a funcionar
-            en el microondas de mi casa
-          </p>
-          <img
-            src="https://cdn.mos.cms.futurecdn.net/7Ht8x3enxNeRKDJLwmxmV9.png"
-            alt="Project 1"
-          />
-        </section>
-      
-        <section>
-          <h3>Project 2</h3>
-          <img
-            src="https://us-tuna-sounds-images.voicemod.net/f2d55c27-f82c-4f0a-bf4e-e0dd3f7c1991-1671835896517.png"
-            alt="Project 2"
-          />
-        </section>
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <article class="project-card">
+                <img src="https://cdn.mos.cms.futurecdn.net/7Ht8x3enxNeRKDJLwmxmV9.png" alt="DOOM Project">
+                <h3>DOOM Everywhere</h3>
+                <p>Pushing hardware limits by running DOOM on unconventional devices. Current target: Smart Microwave</p>
+                <div class="tech-stack">
+                    <span>#ReverseEngineering</span>
+                    <span>#HardwareHacking</span>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="https://us-tuna-sounds-images.voicemod.net/f2d55c27-f82c-4f0a-bf4e-e0dd3f7c1991-1671835896517.png" alt="Secret Project">
+                <h3>Experimental AI</h3>
+                <p>Developing next-gen AI solutions for gaming applications (Details classified)</p>
+                <div class="tech-stack">
+                    <span>#MachineLearning</span>
+                    <span>#GameAI</span>
+                </div>
+            </article>
+        </div>
+    </section>
 
-      <section class="contact-container" id="contact">
-        <h2 class="ContactMe">Contact Me</h2>
-        <section>
-          <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-      
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-      
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-      
-            <input type="submit" value="Send" />
-          </form>
-        </section>
-      </section>
-      
-      <script>
-        const menuItems = document.querySelectorAll('.menu-items a[href^="#"]');
-        menuItems.forEach((item) => {
-          item.addEventListener("click", scrollToSection);
+    <section id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message 🚀</button>
+        </form>
+    </section>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
 
-        function scrollToSection(event) {
-          event.preventDefault();
-          const section = document.querySelector(this.getAttribute("href"));
-          const sectionTop = section.offsetTop;
-          window.scrollTo({
-            top: sectionTop,
-            behavior: "smooth",
-          });
-        }
-        const menu = document.querySelector(".menu-overlay");
-        let prevScrollPos = window.pageYOffset;
-
-        window.addEventListener("scroll", function () {
-          const currentScrollPos = window.pageYOffset;
-
-          if (prevScrollPos > currentScrollPos) {
-            // Si el usuario está desplazándose hacia arriba
-            menu.classList.remove("hidden");
-          } else {
-            // Si el usuario está desplazándose hacia abajo
-            menu.classList.add("hidden");
-          }
-
-          prevScrollPos = currentScrollPos;
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(22, 22, 26, 0.95)';
+            } else {
+                header.style.background = 'rgba(22, 22, 26, 0.9)';
+            }
         });
 
-        menu.addEventListener("mouseenter", function () {
-          // Si el ratón entra en el menú, lo mostramos
-          menu.classList.remove("hidden");
+        // Project card animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
         });
 
-        menu.addEventListener("mouseleave", function () {
-          // Si el ratón sale del menú, lo ocultamos (sólo si el usuario se desplaza hacia abajo)
-          const currentScrollPos = window.pageYOffset;
-
-          if (prevScrollPos < currentScrollPos) {
-            menu.classList.add("hidden");
-          }
+        document.querySelectorAll('.project-card').forEach((card) => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            observer.observe(card);
         });
-      </script>
-    </body>
-  </html>
+    </script>
+</body>
 </html>
