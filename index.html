@@ -1,127 +1,160 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Morillas Delgado | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <title>Carlos Morillas Delgado | Cyber Jianxia Developer</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav class="nav-container">
-            <div class="logo">CMD</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+<body class="bg-dark text-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand gradient-text" href="#">CMD⤳</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link mx-3" href="#about">Cultivation</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3" href="#projects">Artifacts</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3" href="#contact">Formation</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Creative Developer</h1>
-            <p>Turning ideas into digital experiences through code and creativity</p>
         </div>
-    </section>
+    </nav>
 
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>👋 Hola! I'm Carlos, a 19-year-old developer from Granada passionate about pushing boundaries in both coding and gaming. When I'm not crafting digital experiences, you'll find me speedrunning Portal 1 or exploring new worlds in literature.</p>
-                <div class="gaming-tags">
-                    <span class="tag">🎮 Speedrunner</span>
-                    <span class="tag">👨💻 Full Stack Learner</span>
-                    <span class="tag">🚀 Tech Enthusiast</span>
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-1 fw-bold mb-4" style="text-shadow: 0 0 30px rgba(127,90,240,0.4);">
+                        <span class="gradient-text">Cyber</span> Jianxia Developer
+                    </h1>
+                    <p class="lead fs-3 text-secondary">Forging digital realms where ancient wisdom meets future code</p>
                 </div>
-            </div>
-            <div class="about-images">
-                <img src="YOUR_IMAGE_URL_1" alt="Gaming Setup">
-                <img src="YOUR_IMAGE_URL_2" alt="Development Environment">
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-grid">
-            <article class="project-card">
-                <img src="https://cdn.mos.cms.futurecdn.net/7Ht8x3enxNeRKDJLwmxmV9.png" alt="DOOM Project">
-                <h3>DOOM Everywhere</h3>
-                <p>Pushing hardware limits by running DOOM on unconventional devices. Current target: Smart Microwave</p>
-                <div class="tech-stack">
-                    <span>#ReverseEngineering</span>
-                    <span>#HardwareHacking</span>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">Cultivation Path</h2>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-card p-4">
+                        <p class="fs-5 position-relative" style="z-index: 1;">
+                            🌀 Greetings, fellow cultivator! I'm Carlos, a 22-year-old code alchemist from Granada. 
+                            By day, I forge digital artifacts; by night, I transcend reality through Portal 1 speedruns 
+                            and celestial literature journeys.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mt-4" style="z-index: 1;">
+                            <span class="badge bg-primary me-2">⚡ Qi Core Optimization</span>
+                            <span class="badge bg-success me-2">🔮 Spatial Manipulation</span>
+                            <span class="badge bg-purple me-2">🌀 Reality Forging</span>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            
-            <article class="project-card">
-                <img src="https://us-tuna-sounds-images.voicemod.net/f2d55c27-f82c-4f0a-bf4e-e0dd3f7c1991-1671835896517.png" alt="Secret Project">
-                <h3>Experimental AI</h3>
-                <p>Developing next-gen AI solutions for gaming applications (Details classified)</p>
-                <div class="tech-stack">
-                    <span>#MachineLearning</span>
-                    <span>#GameAI</span>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-3 border border-primary" 
+                                 alt="Cultivation Chamber" style="transform: rotate(-3deg);">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://via.placeholder.com/150" class="img-fluid rounded-3 border border-success mt-5" 
+                                 alt="Artifact Forge" style="transform: rotate(2deg);">
+                        </div>
+                    </div>
                 </div>
-            </article>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2 class="section-title">Let's Connect</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <input type="text" placeholder="Name" required>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">Celestial Artifacts</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="project-card h-100 p-4 rounded-4">
+                        <img src="https://cdn.mos.cms.futurecdn.net/7Ht8x3enxNeRKDJLwmxmV9.png" 
+                             class="img-fluid rounded-3 mb-4 border border-primary" alt="DOOM Artifact">
+                        <h3 class="h2 mb-3">Void Furnace Engine</h3>
+                        <p class="text-secondary">Channeling primordial energies to manifest DOOM across reality layers. Current vessel: Microwave of Eternity</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-primary me-2">#Soulbinding</span>
+                            <span class="badge bg-primary">#RealmWeaving</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card h-100 p-4 rounded-4">
+                        <img src="https://us-tuna-sounds-images.voicemod.net/f2d55c27-f82c-4f0a-bf4e-e0dd3f7c1991-1671835896517.png" 
+                             class="img-fluid rounded-3 mb-4 border border-success" alt="AI Core">
+                        <h3 class="h2 mb-3">Heavenly Dao Core</h3>
+                        <p class="text-secondary">Forging sentient cultivation manuals through celestial algorithms (Divine secrets protected by heavenly laws)</p>
+                        <div class="mt-auto">
+                            <span class="badge bg-success me-2">#KarmicAlgorithms</span>
+                            <span class="badge bg-success">#SoulNexus</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-                <textarea rows="5" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit">Send Message 🚀</button>
-        </form>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-5 display-4 fw-bold">Formation Link</h2>
+                    <form class="contact-form">
+                        <div class="mb-4">
+                            <input type="text" class="form-control form-control-lg" placeholder="Spiritual Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control form-control-lg" placeholder="Soul Lantern Address" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control form-control-lg" rows="5" placeholder="Daoist Inquiry" required></textarea>
+                        </div>
+                        <button class="btn btn-lg w-100" 
+                                style="background: var(--gradient); border: 1px solid var(--primary);">
+                            🌀 Initiate Spirit Transmission
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(22, 22, 26, 0.95)';
-            } else {
-                header.style.background = 'rgba(22, 22, 26, 0.9)';
-            }
-        });
-
-        // Project card animation on scroll
+        // Animate elements on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if(entry.isIntersecting) {
                     entry.target.style.opacity = 1;
                     entry.target.style.transform = 'translateY(0)';
                 }
             });
         });
 
-        document.querySelectorAll('.project-card').forEach((card) => {
-            card.style.opacity = 0;
-            card.style.transform = 'translateY(50px)';
-            card.style.transition = 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-            observer.observe(card);
+        document.querySelectorAll('.project-card, .about-card').forEach((el) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(50px)';
+            el.style.transition = 'all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            observer.observe(el);
         });
     </script>
 </body>

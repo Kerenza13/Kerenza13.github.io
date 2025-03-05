@@ -1,0 +1,262 @@
+/* === CYBER CULTIVATION COSMOS === */
+:root {
+    --primary: #7f5af0;
+    --secondary: #2cb67d;
+    --accent: #ff6b6b;
+    --void: #0a0a12;
+    --starlight: #f0f3ff;
+    --neon-aura: linear-gradient(135deg, 
+        #7f5af0 0%, 
+        #2cb67d 40%,
+        #ff6b6b 100%);
+    --font-title: 'Orbitron', sans-serif;
+    --font-mystic: 'ZCOOL QingKe HuangYou', cursive;
+    --font-body: 'Exo 2', sans-serif;
+}
+
+body {
+    background: 
+        radial-gradient(circle at 50% 100%, 
+            rgba(127,90,240,0.1) 0%, 
+            transparent 30%),
+        linear-gradient(45deg,
+            var(--void) 0%,
+            #0f0f1a 100%);
+    color: var(--starlight);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+/* === FLOATING SPIRIT REALMS === */
+.spirit-realm {
+    position: fixed;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.spirit-realm::before {
+    content: '';
+    position: absolute;
+    background: rgba(127,90,240,0.05);
+    filter: blur(50px);
+}
+
+.realm-1 { 
+    top: 20%; 
+    left: 10%; 
+    width: 300px; 
+    height: 300px;
+    animation: float 12s infinite ease-in-out;
+}
+.realm-2 { 
+    top: 60%; 
+    right: 15%; 
+    width: 400px; 
+    height: 400px;
+    animation: float 15s infinite reverse ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-50px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* === CELESTIAL NAVIGATION === */
+.navbar {
+    background: 
+        linear-gradient(180deg,
+            rgba(10,10,18,0.98) 0%,
+            transparent 200%) !important;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(127,90,240,0.3);
+}
+
+.navbar-brand {
+    font-family: var(--font-mystic);
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px var(--primary);
+    position: relative;
+}
+
+.navbar-brand::after {
+    content: '❖';
+    position: absolute;
+    right: -1.5rem;
+    color: var(--accent);
+    font-size: 1.2rem;
+    animation: pulse 1.5s infinite;
+}
+
+.nav-link {
+    position: relative;
+    font-family: var(--font-mystic);
+    font-size: 1.2rem;
+    margin: 0 1.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--neon-aura);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+/* === INFINITY HERO === */
+.hero {
+    height: 110vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150vw;
+    height: 150vh;
+    background: 
+        repeating-conic-gradient(
+            from 45deg,
+            rgba(127,90,240,0.05) 0deg 10deg,
+            transparent 10deg 20deg),
+        radial-gradient(circle, 
+            rgba(44,182,125,0.1) 0%, 
+            transparent 70%);
+    transform: translate(-50%, -50%);
+    animation: cosmic-spin 60s linear infinite;
+}
+
+@keyframes cosmic-spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 30px rgba(127,90,240,0.4);
+}
+
+/* === CULTIVATION CHAMBER === */
+.cultivation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    position: relative;
+    overflow: visible;
+}
+
+.cultivation-card {
+    background: 
+        linear-gradient(145deg,
+            rgba(127,90,240,0.05) 0%,
+            rgba(10,10,18,0.8) 100%);
+    border: 1px solid rgba(127,90,240,0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.cultivation-card:hover {
+    transform: translateY(-20px) rotateX(5deg) rotateY(-5deg);
+    box-shadow: 
+        0 25px 50px rgba(127,90,240,0.2),
+        0 0 50px rgba(44,182,125,0.1);
+}
+
+/* === ARTIFACT ALTAR === */
+.artifact-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(127,90,240,0.3);
+    border-radius: 20px;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.artifact-card::before {
+    content: '';
+    position: absolute;
+    inset: -100%;
+    background: 
+        linear-gradient(45deg,
+            transparent 45%,
+            rgba(127,90,240,0.1) 50%,
+            transparent 55%);
+    animation: light-sweep 3s infinite;
+}
+
+@keyframes light-sweep {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.artifact-card:hover {
+    transform: perspective(1000px) rotateX(-5deg) rotateY(5deg);
+}
+
+/* === SPIRIT FORM === */
+.spirit-form input,
+.spirit-form textarea {
+    background: rgba(10,10,18,0.7) !important;
+    border: 1px solid rgba(127,90,240,0.5) !important;
+    border-radius: 10px !important;
+    color: var(--starlight) !important;
+    transition: all 0.3s ease !important;
+}
+
+.spirit-form input:focus,
+.spirit-form textarea:focus {
+    border-color: var(--secondary) !important;
+    box-shadow: 
+        0 0 20px rgba(44,182,125,0.3),
+        inset 0 0 10px rgba(44,182,125,0.2) !important;
+}
+
+.spirit-form button {
+    background: var(--neon-aura);
+    border: none !important;
+    padding: 1.5rem 3rem !important;
+    font-family: var(--font-mystic);
+    font-size: 1.5rem !important;
+    letter-spacing: 2px;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    transition: all 0.3s ease;
+}
+
+.spirit-form button:hover {
+    filter: hue-rotate(45deg);
+    transform: scale(1.1);
+}
+
+/* === SCROLL OF ANIMATIONS === */
+@keyframes qi-pulse {
+    0% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.2); }
+    100% { opacity: 0.8; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .cultivation-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+}
